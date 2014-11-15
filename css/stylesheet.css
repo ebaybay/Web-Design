@@ -68,9 +68,8 @@ h1 {
 	font-size: 4em; 
 	font-family: 'Calligraffitti', cursive;
 	margin: 0;
-	background-image: url(../images/Backdrop.jpg); /*hot air balloons*/
-	background-repeat: no-repeat;
-	background-size: 100%;
+	top: 2px;
+	left: 10px;
 }
 
 h2 {
@@ -204,9 +203,13 @@ td {
 }
 
 #header {
-	border-bottom: 3px solid gray;
 	color: white;
-	margin-bottom: 0.5em;
+	margin-bottom: 7px; /*not sure why this is needed*/
+	position: relative;
+}
+
+#header h1{
+	position: absolute;
 }
 
 #main-content {
@@ -232,7 +235,9 @@ td {
 	transition: max-height 0.15s ease-out; */
 }
 
-
+.header h1{
+	background: fill;
+}
 
 
 
