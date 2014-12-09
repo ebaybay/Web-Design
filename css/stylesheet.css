@@ -1,244 +1,124 @@
-@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+@import url(http://fonts.googleapis.com/css?family=Buda:300);
+@import url(reset.css);
+@import url(responsive.gs.12col.css);
 
-
-/*CSS Document */
-
-
-/* ELEMENTS */
-
-nav a:link {
-	color: white;
+@font-face {
+	font-family: 'RunyTunesRevisitedNF';
+	src: url(../runytunesrevisited/RunyTunesRevisitedNF.ttf);
 }
 
-a:hover {
-	color: #FF5600;
-}
-
-a:active {
-	color: purple;
-}
-
-html{
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-size: 1em; 
-	font-family: 'Lato';
-	color: black;
-	background-color: #FFFFCC;
-	width:100%;
-	margin: 0;
-	padding-bottom: 50px;
-}
-
-/* attempted to cover background with image + add opacity for a few hours (no luck)
-.background{
+.col img{
 	width: 100%;
-	height: 100%;
-	position: relative;
-	background-color: none;
-}
-
-.background:after{
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: url("../images/Backdrop.jpg") no-repeat;
-	background-size: cover;
-	opacity: 0.3;
-	content: '';
-	} */
-
-footer {
-	font-family: 'Calligraffitti', cursive;
-	font-style: italic;
-	font-size: 1.75em;
-	padding: .15em;
-	text-align: center;
 }
 
 h1 {
-	font-size: 4em; 
-	font-family: 'Calligraffitti', cursive;
-	margin: 0;
-	top: 2px;
-	left: 10px;
+	font-family: 'RunyTunesRevisitedNF', cursive;
+	font-size: 5.25em;
+	color: black;
 }
 
 h2 {
-	font-size: 2.25em; /* 36px/16=2.25em */
-	font-family: 'Calligraffitti', cursive;
-	font-style: italic;
-	line-height: 30px;
-	margin: .95em 0 .5em;
+	font-family: 'RunyTunesRevisitedNF', cursive;
+	font-size: 3em;
+	color: black;
+	padding-top: 40px;
+	padding-bottom: 20px;
 }
 
-img {
-	border: 5px solid black;
-	padding: 5px; 
-	margin: 5px;
-	width: 400px;
+h3 {
+	font-family: 'RunyTunesRevisitedNF', cursive;
+	font-size: 2em;
+	color: black;
+}
+
+body {
+	font-size: 1.1em;
+	font-family: 'Buda', serif;
+	position: relative;
+	background: #F5F1C6;
+	background: #F5F1C6 url(../images/nouveauback1.jpg) no-repeat top center fixed;
+	background-size: contain;
+}
+
+p, li {
+	font-family: 'Buda';
+	font-size: 1.1em;
+	color: black;
 }
 
 nav {
-	height: 2em;
-	font-size: 1.25em;
-	text-align: left;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul{
-	margin: 0;
-	padding: 0;
-
+	display: block;
+	position: relative;
+	margin-top: 1.5em;
+	background-color: #A69B24;
+	height: 1.25em;
+	border-right: 8px solid black;
+    border-left: 8px solid black;
 }
 
 nav li {
-	display: inline-block;
-	text-align: center;
-	margin: 0;
-	list-style-type: none; 
-	font-family: 'Lato'; 
+	font-family: 'Buda';
+	list-style-type: none;
+	font-size: 1.25em;
+	color: white;
+    float: middle left;
+    text-align: center;
+    font-style: italic;
 }
 
 nav li a {
-	text-decoration: none;
-	padding: 0.5em; 
-	background-color: gray;
-	margin-right: 5px;
 	color: white;
 }
 
 nav li a:hover {
-	background-color: black;
-	color: red;
+    background-color: black;
+    color: white;
+    -webkit-transition: background-color 0.25s ease-out 0;
+}
+
+nav li a:hover {
+    background-color: black;
+    text-shadow: 0px 0px 10px white;
+    -webkit-transition: text-shadow 0.5s ease-in 0, background-color 0.5s linear 0;
+}
+
+img {
+	width: 200px;
+	height: auto;
+	padding: 5px;
+}
+
+footer {
+	font-family: 'Buda';
+	font-size: 1em;
+    padding: .25em;
+    text-align: center;
+	font-style: italic;
+}
+
+a {
 	text-decoration: none;
-	-webkit-transition: background-color 0.25s ease-out 0;
-}
-
-nav li a:active {
-	background-color: black;
-	text-shadow: 0px 0px 10px white;
-	color: blue;
-	-webkit-transition: text-shadow 0.5s ease-in 0, background-color 0.5s linear 0;
-}
-
-p {
-	font-size: 16px;
-	line-height: 26px; /*this is leading inbetween lines*/
-}
-
-table {
-	width: 100%;
-	border: 15px;
-	border-color: #FFC673;
-	margin: 0 auto;
-	margin-left: 0;
-	padding-bottom: 15px;
-	padding-right: 10px;
-}
-
-
-th {
-	text-align: center;
-	letter-spacing: 0.1em;
-	border-top: 1px solid #FF9700;
-	border-bottom: 2px solid #FF9700;
-	background-color: #00AA72;
-	border-color: #FFC673;
-	border: 15px;
-	padding: 10px;
-	color: white;
-	font-size: 120%;
-	font-family: 'Lato';
-}
-
-td {
-	padding: 10px;
-	border-width: 1px 1px 3px 1px;
-	background-color: #60D4AE;
-	text-align: left;
-	vertical-align: top;
-}
-
-
-/* CLASSES */
-
-.left { /*floats picture left; text wraps around*/
-	width: 430px;
-	display: block;
-	float: left;
-}
-
-.right { /*floats content right, next to image on left*/
-	width: calc(100% - 430px); /*430px is the size of the photo, including padding and border*/
-	display: block;
-	float: right;
-}
-
-.right p:first-child {  /*this aligns the top of the content paragraph to the photo on the left*/
-	margin-top: 0;
-}
-
-
-/* IDs */
-
-#footer {
-	background: rgb(220,220,220);
-	border-bottom: 15px solid black;
-	font-family: 'Calligraffitti', cursive;
-	font-size: 1.25em;
 	color: black;
-	position: fixed; /*stays at bottom of page*/
-	width: 100%;
-	bottom: 0;
+}
+
+a.hover {
+	text-decoration: underline;
+}
+
+a.active {
+	text-decoration: underline, bold;
 }
 
 #header {
-	color: white;
-	margin-bottom: 7px; /*not sure why this is needed*/
-	position: relative;
+    color: white;
+    text-align: center;
+    margin: 0.1em auto;
 }
 
-#header h1{
-	position: absolute;
+#footer {
+    background: #A69B24;
+    border-right: 8px solid black;
+    border-left: 8px solid black;
 }
-
-#main-content {
-	/*79 px is height of footer in Chrome*/
-	margin: 0 0.5em 79px;
-	color: black;
-	float: left;
-}
-
-.workshops h3{
-	cursor: pointer;
-}
-
-.workshops h3 + ol{
-    display: none;
-	/* max-height: 500px;
-	transition: max-height 0.15s ease-in; */
-}
-
-.workshops h3.hide + ol{
-	/* overflow: hidden;
-	max-height: 0;
-	transition: max-height 0.15s ease-out; */
-}
-
-.header h1{
-	background: fill;
-}
-
-
-
 
