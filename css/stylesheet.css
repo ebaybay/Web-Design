@@ -3,9 +3,19 @@
 @import url(reset.css);
 @import url(responsive.gs.12col.css);
 
+html, body{
+	/*height: 100%;*/
+}
+
 @font-face {
 	font-family: 'RunyTunesRevisitedNF';
 	src: url(../runytunesrevisited/RunyTunesRevisitedNF.ttf);
+}
+
+.container{
+	height: 100%;
+	padding-bottom: 100px;
+	position: relative;
 }
 
 .col img{
@@ -34,6 +44,7 @@ h3 {
 }
 
 h4{
+	cursor: pointer;
 	font-weight: bold;
 	font-size: 1.4em;
 }
@@ -94,11 +105,10 @@ nav li a:hover {
     -webkit-transition: text-shadow 0.5s ease-in 0, background-color 0.5s linear 0;
 }
 
-/*img {
-	width: 200px;
-	height: auto;
-	padding: 5px;
-}*/
+.workshops h4 + ol{
+	display: none;
+	margin-left: 1em;
+}
 
 footer {
 	font-family: 'Buda';
@@ -107,6 +117,10 @@ footer {
     text-align: center;
 	font-style: italic;
 	margin-top: 2em;
+}
+
+section{
+	display: none;
 }
 
 a {
@@ -129,6 +143,9 @@ a.active {
 }
 
 #footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
     background: #A69B24;
     border-right: 8px solid black;
     border-left: 8px solid black;
