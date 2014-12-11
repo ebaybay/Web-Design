@@ -20,6 +20,10 @@ function showSection(name){
 	$('#' + name).show();
 }
 
+function clearAllActive(){
+	$('nav li a').removeClass('active');
+}
+
 var currentSection = getHashSectionName(href);
 if(currentSection === -1){
 	$('#home').show();
@@ -27,7 +31,16 @@ if(currentSection === -1){
 	showSection(currentSection);
 }
 
-$('nav li a').on('click', function(){
+$('nav li a').on('click', function(event){
+	event.preventDefault();
+	hideAllSections();
+	showSection(getHashSectionName(this.href));
+	clearAllActive();
+	$(this).addClass('active');
+});
+
+$('h1 a').on('click', function(event){
+	event.preventDefault();
 	hideAllSections();
 	showSection(getHashSectionName(this.href));
 });

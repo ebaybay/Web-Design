@@ -26,6 +26,7 @@ h1 {
 	font-family: 'RunyTunesRevisitedNF', cursive;
 	font-size: 5.25em;
 	color: black;
+	text-align: center;
 }
 
 h2 {
@@ -43,7 +44,7 @@ h3 {
 	color: black;
 }
 
-h4{
+h4 {
 	cursor: pointer;
 	font-weight: bold;
 	font-size: 1.4em;
@@ -53,7 +54,6 @@ body {
 	font-size: 1.1em;
 	font-family: 'Buda', serif;
 	position: relative;
-	background: #F5F1C6;
 	background: #F5F1C6 url(../images/nouveauback1.jpg) no-repeat top center fixed;
 	background-size: contain;
 }
@@ -65,7 +65,7 @@ p, li {
 	color: black;
 }
 
-img{
+img {
 	padding: 0.25em;
 	border: 0.25em solid #A69B24;
 }
@@ -73,7 +73,7 @@ img{
 nav ul{
 	margin-top: 1.5em;
 	border-right: 8px solid black;
-    border-left: 8px solid black;
+	border-left: 8px solid black;
 	background-color: #A69B24;
 }
 
@@ -82,9 +82,9 @@ nav li {
 	list-style-type: none;
 	font-size: 1.25em;
 	color: white;
-    float: middle left;
-    text-align: center;
-    font-style: italic;
+	float: middle left;
+	text-align: center;
+	font-style: italic;
 }
 
 nav li a {
@@ -94,15 +94,19 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: black;
-    color: white;
-    -webkit-transition: background-color 0.25s ease-out 0;
+	background-color: black;
+	color: white;
+	-webkit-transition: background-color 0.25s ease-out 0;
 }
 
 nav li a:hover {
-    background-color: black;
-    text-shadow: 0px 0px 10px white;
-    -webkit-transition: text-shadow 0.5s ease-in 0, background-color 0.5s linear 0;
+	background-color: black;
+	text-shadow: 0px 0px 10px white;
+	-webkit-transition: text-shadow 0.5s ease-in 0, background-color 0.5s linear 0;
+}
+
+nav li a.active {
+	background-color: black;
 }
 
 .workshops h4 + ol{
@@ -113,13 +117,19 @@ nav li a:hover {
 footer {
 	font-family: 'Buda';
 	font-size: 1em;
-    padding: .25em;
-    text-align: center;
+	padding: .25em;
+	text-align: center;
 	font-style: italic;
 	margin-top: 2em;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background: #A69B24;
+	border-right: 8px solid black;
+	border-left: 8px solid black;
 }
 
-section{
+section {
 	display: none;
 }
 
@@ -134,20 +144,5 @@ a.hover {
 
 a.active {
 	text-decoration: underline, bold;
-}
-
-#header {
-    color: white;
-    text-align: center;
-    margin: 0.1em auto;
-}
-
-#footer {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-    background: #A69B24;
-    border-right: 8px solid black;
-    border-left: 8px solid black;
 }
 
